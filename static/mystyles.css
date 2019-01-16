@@ -1,0 +1,108 @@
+
+.navbar-dark{
+	background-color: #FF8800;
+}
+
+.navbar-brand {
+	font-size: 20px;
+	font-weight: bold;
+	color: #212121 !important;
+}
+.nav-link{
+	color: #212121 !important;
+	font-weight: bold;
+}
+
+body{
+	background-color: #212121;
+}
+
+/*Heading row*/
+.HeadingRow{
+	margin-top: 8%;
+}
+
+.home-section{
+	/*margin-top: 20px;*/
+	margin-left: 70px;
+}
+
+.img-thumbnail {
+	height: 80%;
+	width: 60%;
+	background-color: #212121;
+	border: 1px solid #dddddd;
+	border-radius: 3px
+}
+
+.item-section{
+	/*margin-top: 150px;*/
+	/*margin-left: 300px;*/
+	float: center;
+	padding: 60px 50px 50px 10px;
+	/*padding-top: 100px;
+	padding-left: 100px;
+	padding-bottom: 100px;*/
+	text-align: center;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+}
+
+/*Add movies*/
+.addMovie-section {
+	margin-left: 50%
+	margin-top: 20%;
+	background: #212121;
+  	padding: 10px 20px;
+  	border: 1px solid #dddddd;
+  	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+.fieldsetAddMovie{
+	border: 1px solid #dddddd;
+	padding: 10px 20px;
+}
+
+.legend{
+	border-style:none;
+    width: 35%;
+    padding-left:5px;
+    color: #FF8800;
+
+}
+
+.form-control-label{
+	color: #FF8800;
+}
+
+/*Buttons on movie Item*/
+.btn{
+	float: left;
+	margin-right: 5px;
+}
+
+
+/*Login page*/
+
+.content-section {
+   	/*padding: 10px 20px;*/
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-top: 15%;
+}
+
+.fieldsetLogin{
+	border: 1px solid #dddddd;
+	padding: 10px 20px;
+}
+
+.legendLogin{
+	border-style:none;
+    color: #FF8800;
+    width: 30%;
+    padding-left:5px;
+
+}
+
