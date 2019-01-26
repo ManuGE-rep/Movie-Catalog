@@ -1,0 +1,13 @@
+{% extends 'default.html' %}
+{% block content %}
+	<div class="container-fluid home-section">
+		<div class="row">
+				{% for p in pics %}
+				<div class="col-lg-3 thumb " >
+				<a href="{{ url_for('movieItem', movie_name=p.title) }}"><img src="{{ p.cover }}" class="img-thumbnail" alt="{{ p.name }}" id="home-pics"></a>
+				<p style="color: white;">{{ p.title }}</p>
+				</div>
+				{% endfor %}
+		</div>
+	</div>
+{% endblock content %}
