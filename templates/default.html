@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="182017698238-prddlvpn597mp061ot6u0vcj0ah7981t.apps.googleusercontent.com">
+
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyles.css') }}">
+
+    <title>Movie Catalog</title>
+
+</head>
+<body>
+	{% include 'navigation.html' %}
+    <div class="row">
+        <div class="HeadingRow container-fluid col-md-12">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <p class="alert alert-{{ category }} alert-dismissible" style="background-color: #212121;
+                                                                                       border: none; text-align: center;
+                                                                                       font-weight: bold; font-size: 20px;">
+                            {{ message }}
+                        </p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="//apis.google.com/js/platform.js?onload=start"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+</html>

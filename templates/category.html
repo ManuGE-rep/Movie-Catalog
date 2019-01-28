@@ -1,0 +1,20 @@
+{% extends 'default.html' %}
+{% block content %}
+	<div class="container-fluid home-section">
+		<div class="row">
+			{% if movie %}
+					{% for m in movie %}
+					<div class="col-lg-3 thumb ">
+						<a href="{{ url_for('movieItem', movie_name=m.title) }}"><img src="{{ m.cover }}" class="img-thumbnail" alt="{{m.name}}"></a>
+					</div>
+					{% endfor %}
+			{% else %}
+				<h3 style="color: white"> No movies in this category !</h3>
+			{% endif %}
+
+		</div>
+	</div>
+
+
+
+{% endblock content%}
